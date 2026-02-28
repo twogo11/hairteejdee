@@ -1,63 +1,54 @@
-import Image from "next/image";
+'use client';
+import { useState } from 'react';
+import PasswordProtection from '@/components/PasswordProtection';
 
 export default function Home() {
+  const [showContent, setShowContent] = useState(false);
+
+  const handlePasswordCorrect = () => {
+    setShowContent(true);
+  };
+
+  // Хэрэв нууц үг оруулаагүй бол PIN хуудсыг харуулна
+  if (!showContent) {
+    return <PasswordProtection onPasswordCorrect={handlePasswordCorrect} />;
+  }
+
+  // Нууц үг зөв үед харагдах "Matcha Style" контент
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <div className="flex min-h-screen items-center justify-center bg-[#f1f3eb] font-sans p-6">
+      <main className="flex w-full max-w-2xl flex-col items-center justify-center bg-[#dce3c8] rounded-[3rem] py-16 px-10 shadow-2xl border-4 border-[#c2cca3] text-center animate-in fade-in zoom-in duration-700">
+        
+        {/* Чиний өгсөн GIF-ийг энд байрлууллаа */}
+        <div className="relative mb-8 group">
+          <div className="absolute -inset-1 bg-[#b5bf93] rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+          <div className="relative bg-[#f1f3eb] p-2 rounded-3xl border-2 border-[#c2cca3] overflow-hidden shadow-lg">
+            <img 
+              src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWZiM3VxZGZrNThhZmZqc3M0bTB0eXhlbGJyODVkbWJhMWRqdndkbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5YuoNNBoTtAxy7Ert9/giphy.gif" 
+              alt="Matcha Vibe GIF" 
+              className="w-64 h-auto rounded-2xl"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-6">
+          <h1 className="text-4xl font-black leading-tight tracking-tight text-[#5c6645]">
+            Тавтай морил! 🍵
+          </h1>
+          
+          <div className="h-1 w-20 bg-[#7e8c5d] rounded-full opacity-50"></div>
+
+          <p className="max-w-md text-lg leading-relaxed text-[#7e8c5d] font-medium">
+            Нууц код амжилттай баталгаажлаа. <br/>
+            Одоо та манай тусгай буланд нэвтэрч чадлаа.
+          </p>
+
+          <button 
+            onClick={() => setShowContent(false)}
+            className="mt-4 px-6 py-2 bg-[#7e8c5d] text-[#f1f3eb] rounded-full font-bold hover:bg-[#5c6645] transition-colors shadow-md active:scale-95"
           >
-            Documentation
-          </a>
+            Гарах
+          </button>
         </div>
       </main>
     </div>

@@ -1,20 +1,14 @@
-// Updated page.tsx with proper TypeScript types and fixes
+// Corrected TypeScript version with birthday message content
 
-import React from 'react';
+// This file contains the logic for displaying the birthday message
 
-// Define the props type
-interface PageProps {
-    title: string;
-    content: string;
-}
-
-const Page: React.FC<PageProps> = ({ title, content }) => {
+const birthdayMessage = () => {
     return (
         <div>
-            <h1>{title}</h1>
-            <p>{content}</p>
+            <h1>Happy Birthday!</h1>
+            <p>Wishing you a day filled with love and cheer.</p>
         </div>
     );
 };
 
-export default Page;
+export default birthdayMessage;

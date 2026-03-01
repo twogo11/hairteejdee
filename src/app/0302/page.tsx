@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import confetti from 'canvas-confetti';
 
-export default function Page() {
+export default function Home() {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
@@ -27,20 +27,8 @@ export default function Page() {
 
         {/* Зургийн хэсэг */}
         <div className="flex flex-col items-center gap-8">
-          <img 
-            src="https://media.giphy.com/media/5YuoNNBoTtAxy7Ert9/giphy.gif" 
-            alt="Giphy animation"
-            className="w-64 h-64 object-cover rounded-lg shadow-lg"
-          />
-          <h1 className="text-4xl font-bold text-[#ad1457]">
-            Сайн уу, Чандаа Чамд зориулж хийсэн сайтад тавтай морил!
-          </h1>
-          <p className="text-lg text-[#880e4f]">
-            тэгээд чи сайн код хийж ороод ирсэн ш дээ. Тэрэн шиг зөндөө их код байна. Энд жагсаалтыг үлдээ, сонирхоноос орж эхлээд үзээрэй.
-          </p>
-          <p className="text-lg text-[#880e4f]">
-            6767 1234 0302 0505 
-          </p>
+          
+          
 
           {/* Буцах товч */}
           <Link 
@@ -55,6 +43,3 @@ export default function Page() {
     </div>
   );
 }
-
-
-

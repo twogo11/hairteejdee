@@ -19,7 +19,7 @@ export default function Home() {
         {/* Зураг */}
         <div className="relative w-full rounded-[2rem] overflow-hidden shadow-xl border-4 border-white mb-8">
           <img 
-            src="https://i.pinimg.com/736x/a9/74/23/a97423242665c959e8179c24a16b92aa.jpg" 
+            src="https://i.pinimg.com/736x/0d/35/46/0d3546764fd444a5f3b7d33f71a29e63.jpg" 
             alt="cute" 
             className="w-full h-auto"
           />

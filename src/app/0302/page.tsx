@@ -28,7 +28,19 @@ export default function Home() {
         {/* Зургийн хэсэг */}
         <div className="flex flex-col items-center gap-8">
           
-          
+          {/* Peak Day текст */}
+          <h1 className="text-6xl font-bold text-[#ad1457] tracking-wider animate-bounce">
+            PEAK DAY
+          </h1>
+
+          {/* GIF нэмэх */}
+          <div className="w-full max-w-md">
+            <img 
+              src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3NpZnN3eTU1b3luYTF2amh5NjU4ZHhjOXN3bGwwM3lvaXR1eWI0ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XsRbLNGt71qiPHnGCB/giphy.gif" 
+              alt="Giphy animation"
+              className="w-full h-auto rounded-2xl shadow-lg"
+            />
+          </div>
 
           {/* Буцах товч */}
           <Link 

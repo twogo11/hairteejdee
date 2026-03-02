@@ -39,7 +39,7 @@ export default function Page() {
             тэгээд чи сайн код хийж ороод ирсэн ш дээ. Тэрэн шиг зөндөө их код байна. Энд жагсаалтыг үлдээ, сонирхоноос орж эхлээд үзээрэй.
           </p>
           <p className="text-lg text-[#880e4f]">
-            yg ene daraallaar orood haraarai chandaa - 0302 0505 4545 6767 6969 1234
+            yg ene daraallaar orood haraarai chandaa - 0302 unuudr  0505 one piece  4545 tort 6767 you know 6969 belegnii detail 1234 hamgiin suuld in orooroi
           </p>
 
           {/* Буцах товч */}

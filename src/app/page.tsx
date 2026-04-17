@@ -33,13 +33,13 @@ export default function PasswordProtection() {
         <div className="flex flex-col items-center mb-8">
           <div className="relative bg-[#fff1f2] p-2 rounded-3xl border-2 border-[#fecdd3] overflow-hidden shadow-lg">
             <img 
-              src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGxiNGkwZGJnMWZ0b255dWk4cW55OWtieGtkNTk1Y2p5ZHowdjlnZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/35PYDhkVkOPEEAKzkc/giphy.gif" 
+              src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnMzZ25zaDFkc201OWRiNmNxaTY4cW5mOW50OXEwbDhqeDdrMGprZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9IgG50Fb7Mi0prBC/giphy.gif" 
               alt="Pink Vibe" 
               className="w-64 h-auto rounded-2xl"
             />
           </div>
           <h2 className="mt-6 text-xl font-black text-[#ad1457] tracking-[0.15em] uppercase text-center">
-            Guess whose birthday?
+            zass qr unshuultsn naajin 
           </h2>
         </div>
 

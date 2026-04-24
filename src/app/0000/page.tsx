@@ -15,7 +15,7 @@ export default function WelcomePage() {
 
     const randomInRange = (min: number, max: number) => Math.random() * (max - min) + min;
 
-    const interval: any = setInterval(function() {
+    const interval = setInterval(function() {
       const timeLeft = animationEnd - Date.now();
 
       if (timeLeft <= 0) {
@@ -73,8 +73,8 @@ export default function WelcomePage() {
                 Юуны тулд 1 жил жинхэнэ код бичиж суулаа даа haha. 
                 <br /><br />
                 За за, таныг эхлээд 10 асуулттай жижиг асуултаар сорьж үзье гэж бодлоо. 
-                Хэрвээ 8-аас дээш зөв хариулвал код гарч ирнэ. 
-                Тэр кодыг хийгээд орж уншаарай. Танд амжилт!
+                Хэрвээ 8-аас дээш зөв хариулвал захиа гарч ирнэ
+.
               </p>
             </div>
           </div>
